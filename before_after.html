@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before-after</title>
+    <style>
+        body{margin: 0;}
+        html{scroll-behavior: smooth;}
+
+        .one{margin-top: 50px;width: 200px;height: 40px;background-color: black;position: relative;text-align: center;line-height: 40px;font-size: 36px;color: thistle;margin-left: 20%;margin-top: 20%;}
+        .one:before{
+            content: ' ';
+            font-size: 36px;
+            left: 0;
+            position: absolute;
+            width: 5px;height: 40px;background-color: red;
+            opacity: 0;
+            transition: .5s;
+            text-align: center;
+            transform: translateY(-200px);
+        }
+        .one:hover:before{opacity: 1;transform: translateY(0px);}
+        .one:after{
+            content: ' ';
+            font-size: 36px;
+            right: 0;
+            position: absolute;
+            width: 5px;height: 40px;background-color: seagreen;
+            opacity: 0;
+            line-height: 200px;
+            transition: .5s;
+            text-align: center;
+            transform: translateY(0px);
+            transition-delay: .5s;
+            margin-left: 200px;margin-top: 200px;
+        }
+        .one:hover:after{opacity: 1;transform: translateY(-200px);}
+    </style>
+</head>
+<body>
+    <div class="one">Ayush</div>
+</body>
+</html>

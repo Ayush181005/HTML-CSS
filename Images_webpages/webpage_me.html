@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TheScientist</title>
+    <style>html{scroll-behavior: smooth;}
+        body{margin: 0;}
+        .header{width: 100%;height: 100%;background-color: rgb(231, 126, 126);padding: 20px;}
+        ul{margin: 0; height: 35px; background-color:white ; list-style: none; overflow: hidden; position: sticky; top: 0%;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);padding-top: 5px;padding-bottom: 3px;padding: 5px;}
+        li a{float: left; padding: 6px; color:black; text-decoration: none; transition :.5s;}
+        .home{width: 100%; height: 100vh; background-color:rgb(255, 0, 0);}
+        .hobbies{width: 100%; height: 100vh; background-color: aqua;}
+        .achievements{width: 100%; height: 100vh; background-color: greenyellow;}
+        .favscientists{width: 100%; height: 100vh; background-color: gold;}
+        .about{width: 100%; height: 100vh; background-color:khaki;}
+        .photos{width: 100%; height: 120vh; background-color: lightcoral;}
+        .register{width: 100%; height: 100vh; background-color:lightseagreen;}
+
+        .card{width: 200px;height: 400px;background-color: rgb(247, 100, 107);padding: 20px;float: left;margin-left:250px;margin-top:4%;transition: .5s;}
+        .card2{width: 200px;height: 400px;background-color:rgb(247, 100, 107);padding: 20px;float: left;margin-left:20px;margin-top:4%;transition: .5s;}
+        .card3{width: 200px;height: 400px;background-color:rgb(247, 100, 107);padding: 20px;float: left;margin-left:20px;margin-top:4%;transition: .5s;}
+
+        .card4{width: 300px;height: 400px;background-color:aqua;padding: 20px;float: left;margin-left:150px;margin-top:4%;transition: .5s;}
+        .head4{width: 300px;height: 200px;background:url('tennis.jpg');background-size: cover;transition: .5s;}
+
+        .card5{width: 300px;height: 400px;background-color:aqua;padding: 20px;float: left;margin-left:20px;margin-top:4%;transition: .5s;}
+        .head5{width: 300px;height: 200px;background:url('art.jpg');background-size: cover;transition: .5s;}
+
+        .card6{width: 300px;height: 400px;background-color:aqua;padding: 20px;float: left;margin-left:20px;margin-top:4%;transition: .5s;}
+        .head6{width: 300px;height: 200px;background:url('invent.jpg');background-size: cover;transition: .5s;}
+
+        .card7{width: 400px;height: 400px;background-color:greenyellow;padding: 20px;float: left;margin-left:100px;margin-top:4%;transition: .5s;}
+        .head7{width: 400px;height: 300px;background:url('a1.jpeg');background-size: cover;transition: .5s;}
+
+        .card8{width: 300px;height: 400px;background-color:greenyellow;padding: 20px;float: left;margin-left:20px;margin-top:4%;transition: .5s;}
+        .head8{width: 300px;height: 300px;background:url('a2.jpeg');background-size: cover;transition: .5s;}
+
+        .card9{width: 300px;height: 400px;background-color:greenyellow;padding: 20px;float: left;margin-left:20px;margin-top:4%;transition: .5s;}
+        .head9{width: 300px;height: 300px;background:url('a3.jpeg');background-size: cover;transition: .5s;}
+
+        .carda{width: 200px;height: 400px;background-color:gold;padding: 20px;float: left;margin-left:300px;margin-top:4%;transition: .5s;}
+        .heada{width: 200px;height: 220px;background:url('edison.jpg');background-size: cover;transition: .5s;}
+
+        .cardb{width: 200px;height: 400px;background-color:gold;padding: 20px;float: left;margin-left:20px;margin-top:4%;transition: .5s;}
+        .headb{width: 200px;height: 220px;background:url('newton2.jpg');background-size: cover;transition: .5s;}
+
+        .cardc{width: 200px;height: 400px;background-color:gold;padding: 20px;float: left;margin-left:20px;margin-top:4%;transition: .5s;}
+        .headc{width: 200px;height: 220px;background:url('einstein.jpg');background-size: cover;transition: .5s;}
+
+        .cardd{width: 300px;height: 600px;background-color:lightcoral;padding: 20px;float: left;margin-left:130px;margin-top:4%;transition: .5s;}
+        .headd{width: 245px;height: 280px;background:url('p1.jpeg');background-size: cover;transition: .5s;}
+        .footd{width: 245px;height: 280px;background:url('p2.jpeg');background-size: cover;transition: .5s;}
+
+        .carde{width: 300px;height: 600px;background-color:lightcoral;padding: 20px;float: left;margin-left:20px;margin-top:4%;transition: .5s;}
+        .heade{width: 245px;height: 280px;background:url('p3.jpeg');background-size: cover;transition: .5s;}
+        .foote{width: 245px;height: 280px;background:url('p4.jpeg');background-size: cover;transition: .5s;}
+
+        .cardf{width: 300px;height: 600px;background-color:lightcoral;padding: 20px;float: left;margin-left:20px;margin-top:4%;transition: .5s;}
+        .headf{width: 245px;height: 280px;background:url('p5.jpeg');background-size: cover;transition: .5s;}
+        .footf{width: 245px;height: 280px;background:url('p6.jpeg');background-size: cover;transition: .5s;}
+
+        li a:hover{
+            border-radius: 10%;
+            background-color: rgb(151, 151, 151);
+
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#a">Home</a></li>
+        <li><a href="#b">About</a></li>
+        <li><a href="#c">Photos</a></li>
+        <li><a href="#d">Register</a></li>
+    </ul>
+
+    <div class="home" id="a"><br><br>
+        <center><h1><b>Home</b></h1></center>
+        <div class="header">
+            <a href="#e">
+                <div class="card"><center><h2>Hobbies</h2></center><br><br><br><br><br><br>
+                    <img src="hobby.jpg" width="200px" height="200px"/>
+                </div>  
+            </a>
+
+            <a href="#f">
+                <div class="card2"><center><h2>Achievements</h2></center><br><br><br><br><br><br>
+                    <img src="achieve.jpg" width="200px" height="200px"/>
+
+                </div>
+            </a>
+
+            <a href="#g">
+                <div class="card3"><center><h2>Favourite scientists</h2></center><br><br><br><br><br><br>
+                    <img src="sci.jpg" width="200px" height="200px"/>
+
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="hobbies" id="e"><br><br><br>
+        <center><p><b>These are my hobbies and I love doing them.</b></p></center>
+        <div class="card4">
+            <h1>Playing tennis</h1>
+            <div class="head4"></div>  
+        </div>
+
+        <div class="card5">
+            <h1>Art</h1>
+            <div class="head5"></div>
+        </div>
+
+        <div class="card6">
+            <h1>Science & inventing</h1>
+            <div class="head6"></div>
+        </div>
+    </div>
+
+    <div class="achievements" id="f"><br><br><br>
+        <center><p><b>This is a glimpse of some of my achievements.</b></p></center>
+
+        <div class="card7">
+            <h1>Study and Technology</h1><br><br>
+            <div class="head7"></div>
+        </div>
+
+        <div class="card8">
+            <h1>Sports</h1><br><br>
+            <div class="head8"></div>
+        </div>
+
+        <div class="card9">
+            <h1>Art</h1><br><br>
+            <div class="head9"></div>
+        </div>
+    </div>
+
+    <div class="favscientists" id="g"><br><br><br>
+        <center><p><b>These are the scientists whom I admire and who have inspired me.</b></p></center>
+        <div class="carda">
+            <h1>Thomas Alva Edison</h1><br><br>
+            <div class="heada"></div>
+        </div>
+
+        <div class="cardb">
+            <h1>Sir Isaac Newton</h1><br><br>
+            <div class="headb"></div>
+        </div>
+
+        <div class="cardc">
+            <h1>Albert Einstein</h1><br><br>
+            <div class="headc"></div>
+        </div>
+    </div>
+
+    <div class="about" id="b"><br><br>
+        <center><h1>About Ayush</h1>
+        <p>
+            Ayush is a good boy.<br>
+            <hr>
+            <br>
+            He plays nice tennis and goes in Belvedere tennis coaching.<br>He has won many tennis tournaments as well.<br>
+            <hr>
+            <br>
+            He also makes good paintings.<br>
+            <hr>
+            <br>
+            He has also made some inventions such as the medicine box, ecofriendly fabric drier, etc.<br>
+            <hr>
+            <br>
+            <b>Thank you!!!</b>
+        </p>
+        </center>
+    </div>
+
+    <div class="photos" id="c">
+        <div class="cardd">
+            <div class="headd"></div>
+            <div class="footd"></div>
+        </div>
+
+        <div class="carde">
+            <div class="heade"></div>
+            <div class="foote"></div>
+        </div>
+
+        <div class="cardf">
+            <div class="headf"></div>
+            <div class="footf"></div>
+        </div>
+    </div>
+
+    <div class="register" id="d"><center>
+        <br><br><br><br><br><br><br><br><br>
+        <h1>Registration form :</h1>
+
+        <form>
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td><input type = "text" placeholder="First name"></td>
+                    <td><input type = "text" placeholder="Last name"></td><!--normal text-->
+                </tr>
+
+                <tr>
+                    <td>DOB :</td>
+                    <td><input type = "date"></td><!--date-->
+                </tr>
+
+                <tr>
+                    <td>E-mail :</td>
+                    <td><input type = "email" placeholder="E-mail or phone"></td><!--email-->
+                </tr>
+
+                <tr>
+                    <td>Gender :</td>
+                    <td>
+                        <input type = "radio" name = "r">Male<!--used for only taking one answer-->
+                        <input type = "radio" name = "r">Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Address :</td>
+                    <td><textarea></textarea></td><!--used for a big area for writing, we can also change the size of it-->
+                </tr>
+
+                <tr>
+                    <td>Coarse :</td>
+                    <td>                      
+                        <input type = "checkbox">C            <!--used for many inputs-->
+                        <input type = "checkbox">C++
+                        <input type = "checkbox">HTML
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align = "center" colspan = "2"><button>submit</button></td><!--button-->
+                </tr>
+            </table>
+        </form>
+        </center>
+    </div>
+
+</body>
+</html>

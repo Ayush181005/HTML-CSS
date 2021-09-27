@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Responsive page</title><!--Responsive page is a type of page where the content can also be seen on other devices like tablets 
+        and mobiles                        & flex is used for making the responsive page
+                                           & then flex:  %; is used for indicating % of the thing on a side-->
+    
+    <style>
+        body{margin: 0;}
+        *{box-sizing: border-box;}
+        .header{width: 100%;padding: 5px;background-color: bisque;text-align: center;}
+        .header2{width: 100%;padding: 20px;background-color: burlywood;}
+        .menu{display: flex;flex-wrap: wrap;background-color: black;justify-content: center;}
+        .menu a{padding: 12px 14px;color: blanchedalmond;text-decoration: none;}
+        .menu a:hover{background-color: cornflowerblue;color: black;}
+        .main{display: flex;flex-wrap: wrap;}   
+        .left{flex: 20%;padding: 20px;background-color: cadetblue;}
+        .right{flex: 80%;padding: 20px;background-color: darkcyan;}
+        .one{width: 100%;padding: 20px;background-color: black;color: white;border-bottom: 1px solid white;}
+    </style>
+</head>
+<body>
+    <div class="header">Royal</div>
+    <div class="header1">Royal Technosoft Pvt. Lmt.</div>
+    <div class="menu">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Download</a>
+        <a href="">Search</a>
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="one">Apple</div>
+            <div class="one">Samsung</div>
+            <div class="one">One+</div>
+        </div>
+        <div class="right">
+            <div class="one">Vivo</div>
+            <div class="one">Oppo</div>
+            <div class="one">Nokia</div>
+        </div>
+    </div>
+    <div class="header" style="background-color: yellow;color: tomato;">&copy;All rights reserved and developed by Ayush.</div>
+</body>
+</html>
