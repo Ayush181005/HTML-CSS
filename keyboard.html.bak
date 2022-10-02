@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+
+    <style>
+        .keyboard{
+            padding: 50px;
+            border: 2px solid green;
+            display: inline-block;
+        }
+        span{
+            margin:2px;
+            padding: 4px;
+            border: 1px solid black;
+            display: inline-block;
+            width:50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+			font-size: 30px;
+        }
+        .done{
+            background-color: rosybrown;
+        }
+        .row2{
+            margin-left: 20px;
+        }
+        .row3{
+            margin-left:50px;
+        }
+        .row4{
+            margin-left:177.5px;
+        }
+        .space{
+            width: 320px;
+        }
+		.enter{
+			width: 110px;
+			margin-left: 70px;
+		}
+    </style>
+</head>
+<body>
+    <h1>Learning Touch typing</h1>
+    <div class="keyboard">
+        <div class="row1">
+            <span class="done">Q</span><span class="done">W</span><span class="done">E</span><span class="done">R</span><span class="done">T</span><span class="done">Y</span><span class="done">U</span><span class="done">I</span><span class="done">O</span><span class="done">P</span>
+        </div>
+        <div class="row2">
+            <span class="done">A</span><span class="done">S</span><span class="done">D</span><span class="done">F</span><span class="done">G</span><span class="done">H</span><span class="done">J</span><span class="done">K</span><span class="done">L</span><span class="done">;</span><span class="enter">Enter</span>
+        </div>
+        <div class="row3">
+            <span class="done">Z</span><span class="done">X</span><span class="done">C</span><span class="done">V</span><span class="done">B</span><span class="done">N</span><span class="done">M</span><span class="done">,</span><span class="done">.</span>
+        </div>
+        <div class="row4">
+            <span class="done space"></span>
+        </div>
+    </div>
+    <div>
+        <p>Completed: <b id="completedPercent">0%</b>, As of 4/2/2022</p>
+        <button class="refreshBtn" onclick="getPercentCompleted()">Refresh</button>
+    </div>
+</body>
+<script>
+    function getPercentCompleted(){
+        total = document.querySelectorAll('span').length;
+        done = document.querySelectorAll('.done').length;
+        // percent = (done/total)*100;
+        percent = Math.round((done/total)*100);
+        document.getElementById('completedPercent').innerText = `${percent}%`;
+    }
+    getPercentCompleted();
+</script>
+</html>
